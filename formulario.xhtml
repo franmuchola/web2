@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Formulario</title>
+<link rel="stylesheet" type="text/css" href="web2.css" />
+</head>
+<body>
+<h1>Puntúa las cervezas</h1>
+<form action="procesar.php" method="post">
+   <!-- Otros campos del formulario -->
+   <div>
+       <label for="nombre">Nombre de la cerveza:</label>
+       <input type="text" id="nombre" name="nombre" />
+   </div>
+
+   <div>
+       <label for="color">Color:</label>
+       <select name="color" id="color">
+           <option value="Rubia">Rubia</option>
+           <option value="Tostada">Tostada</option>
+           <option value="Negra">Negra</option>
+       </select>
+   </div>
+
+   <div>
+       <label for="fermentacion">Fermentación:</label>
+       <select name="fermentacion" id="fermentacion">
+           <option value="Ale">Ales</option>
+           <option value="Lager">Lagers</option>
+           <option value="Lambica">Lámbica</option>
+       </select>
+   </div>
+
+   <div>
+       <label for="puntuacion">Puntuación</label>
+       <select id="puntuacion" name="puntuacion">
+           <option value="1">1</option>
+           <option value="2">2</option>
+           <option value="3">3</option>
+           <option value="4">4</option>
+           <option value="5">5</option>
+       </select>
+   </div>
+
+   <!-- Notas adicionales (campo arriba del cuadro de texto) -->
+   <div>
+       <label for="comentarios">Notas adicionales:</label>
+   </div>
+   <div>
+       <textarea id="comentarios" name="comentarios" rows="5" cols="30"></textarea>
+   </div>
+
+   <!-- Enviar el formulario -->
+   <div>
+       <input type="submit" value="Enviar reseña" />
+       <input name="suscribir" type="checkbox" value="suscribir" checked="checked" /> Suscribirme al boletín de novedades
+   </div>
+</form>
+<p>
+    <img src="imagenes/rubia-tostada-negra.jpg" alt="vaso de cervezas" width="750" height="400" />
+ </p>
+ <div id="footer">
+ <h3><strong><cite>"Save water, drink beer." – Unknown</cite></strong></h3>
+ </div>
+</body>
+</html>
